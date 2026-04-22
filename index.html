@@ -1,24 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Travel Recommendation</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search (beach, temple, country)..."
+        />
+        <button id="btnSearch" onclick="search()">Search</button>
+        <button id="btnClear" onclick="clearSearch()">Clear</button>
+      </div>
+    </nav>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <input type="text" id="search" placeholder="Search...">
-  <button onclick="search()">Search</button>
-</nav>
+    <header>
+      <h1>Welcome to Travel Recommendation 🌍</h1>
+      <p>
+        Your journey to discovery starts here. Find the best beaches, temples,
+        and countries!
+      </p>
+    </header>
 
-<h1>Welcome to Travel Recommendation 🌍</h1>
-<p>Find the best beaches, temples, and countries!</p>
+    <div id="results"></div>
 
-<div id="results"></div>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
